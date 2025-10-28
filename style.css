@@ -108,8 +108,21 @@ img{
 
 
 }
+
 p{
     font-weight: normal;
     color: var(--text-muted);
     margin-left: 10px;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
