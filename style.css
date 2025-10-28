@@ -58,7 +58,6 @@ h3 {
 
 body {
     background-color: var(--bg-dark);
-    padding: 5px 50px 25px 25px;
     display: grid;
     place-items: center;
     height: 100vh;
