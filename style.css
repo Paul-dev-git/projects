@@ -58,8 +58,8 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
     padding-bottom: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .grid-container {
