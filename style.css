@@ -13,7 +13,9 @@
 
     --border: hsl(0, 0%, 70%);
 
-    --gradient: linear-gradient(to bottom right, #4da6ff, #265cff)
+    --header: hsla(0, 0%, 90%, 0.7);
+
+    --gradient: linear-gradient(to bottom right, #71b7ff, #1b4dea)
 }
 
 
@@ -49,6 +51,15 @@ h3 {
     width: 420px;
 }
 
+h5 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--bg-light);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 body {
     background: var(--gradient);
     background-repeat: no-repeat;
@@ -58,8 +69,9 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
     padding-bottom: 500px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 100px
 }
 
 .grid-container {
@@ -86,7 +98,7 @@ a {
 button {
     background: var(--secondary-gradient);
     padding: 7px 15px 7px 15px;
-    border-radius: 15px;
+    border-radius: 100px;
     border: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -120,6 +132,45 @@ p{
 .container{
     width: 60%;
     margin: 0 auto;
+}
+
+.header{
+    position: fixed;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background: var(--bg-gradient);
+    border-radius: 15px;
+    padding-bottom: 2px;
+}
+
+input[type="text"] {
+    vertical-align: baseline;
+    padding-top: 5px;
+    padding-left: 20px;
+    border: none;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 100px;
+    height: 30px;
+    width: 200px;
+    margin: 10px 10px 10px 30px;
+    background: var(--secondary-gradient);
+    border-color: var(--bg-light);
+    color: var(--bg-light);
+}
+
+input::placeholder {
+    color: var(--bg-light);
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
