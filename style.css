@@ -7,10 +7,13 @@
     --text: hsl(0, 0%, 15%);
     --text-muted: hsl(0, 0%, 30%);
 
-    --primary: hsl(195 66% 50%);
-    --secondary: hsl(17 69% 50%);
+    --primary: #4da6ff;
+    --secondary-gradient: linear-gradient(to right, hsl(21, 87%, 56%), hsl(0, 98%, 46%));
+    --secondary: #f14f1e;
 
     --border: hsl(0, 0%, 70%);
+
+    --gradient: linear-gradient(to bottom right, #4da6ff, #265cff)
 }
 
 
@@ -19,15 +22,10 @@ h1 {
     font-family: Arial, sans-serif;
     font-weight: normal;
     color: var(--text);
-    background-color: var(--bg);
     text-align: center;
     padding: 10px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: var(--border);
-    border-width: 1px;
-    width: 400px;
-    box-shadow: 4px 4px 20px var(--border);
+    border-radius: 15px;
+    width: 420px;
 }
 
 h2 {
@@ -48,19 +46,18 @@ h3 {
     background-color: var(--bg);
     padding: 15px 10px;
     border-radius: 15px;
-    margin-bottom: 50px;
-    border-style: solid;
-    border-color: var(--border);
-    border-width: 1px;
     width: 420px;
-    box-shadow: 4px 4px 20px var(--border);
 }
 
 body {
-    background-color: var(--bg-dark);
+    background: var(--gradient);
+    background-repeat: no-repeat;
     display: grid;
     place-items: center;
     height: 100vh;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding-bottom: 300px;
 }
 
 .grid-container {
@@ -75,11 +72,7 @@ body {
     border-radius: 15px;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    border-style: solid;
-    border-color: var(--border);
-    border-width: 1px;
     max-width: 400px;
-    box-shadow: 4px 4px 20px var(--border);
 
 }
 
@@ -89,7 +82,7 @@ a {
 }
 
 button {
-    background-color: var(--secondary);
+    background: var(--secondary-gradient);
     padding: 7px 15px 7px 15px;
     border-radius: 15px;
     border: none;
@@ -99,7 +92,6 @@ button {
     margin-top: 10px;
     margin-bottom: 5px;
     transition: transform 0.2s ease-in-out;
-    box-shadow: 1px 1px 10px hsl(17 69% 40%);
     margin-left: 10px;
 }
 
@@ -111,8 +103,8 @@ button:hover {
 img{
     max-width: 300px;
     border-radius: 15px;
-    box-shadow: 5px 5px 15px var(--primary);
     margin-left: 10px;
+    box-shadow: 5px 5px var(--secondary);
 
 
 }
