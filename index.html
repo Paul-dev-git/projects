@@ -2,37 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=0.5">
-    <title>Title</title>
+    <title>Home</title>
 
     <link rel="stylesheet" href="style.css"/>
 
 </head>
 <body>
     <div class="header">
-        <button onclick="">Home</button>
-        <button onclick="">About</button>
+        <button onclick="window.location.href='index.html'">Start</button>
+        <button onclick="window.location.href='about.html'">Über</button>
         <div class="search-bar">
             <label>
-                <input type="text" placeholder="Search..">
+                <input type="text" id="searchInput" placeholder="Suchen...">
             </label>
         </div>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
     <h1>Meine Projekte</h1>
     <div class="grid-container">
-    <div class="block">
-        <h2>Meine Wetter App</h2>
-        <p>Beschreibung der Seite, in dem Fall eine Beispiel Wetter App</p>
-        <button onclick="window.open('https://google.com', '_blank')">Öffne Seite</button>
-        <p>___________________________________________</p>
-        <br>
-        <img src="https://img.freepik.com/vektoren-premium/wetter-widget-webvorhersage-app-ui-vorlage-mit-wettersymbolen-und-grafikkit-vektorset_440128-566.jpg" alt="preview image of my weather app">
-        <br>
-    </div>
-    <div class="block">My To-do list</div>
-    <div class="block">3</div>
-    <div class="block">4</div>
-    <div class="block">5</div>
-    <div class="block">6</div>
+        <ul id="itemList">
+            <li class="item">
+                <div class="block">
+                    <h2>Meine Wetter-App</h2>
+                    <p>Beschreibung der Seite, in dem Fall ein Beispiel einer Wetter-App</p>
+                    <button onclick="window.open('https://google.com', '_blank')">Öffne Seite</button>
+                    <p>___________________________________________</p>
+                    <br>
+                    <img src="https://img.freepik.com/vektoren-premium/wetter-widget-webvorhersage-app-ui-vorlage-mit-wettersymbolen-und-grafikkit-vektorset_440128-566.jpg" alt="preview image of my weather app">
+                    <br>
+                </div>
+            </li>
+            <li class="item">
+                <div class="block">My To-do list</div>
+            </li>
+            <li class="item">
+                <div class="block">3</div>
+            </li>
+            <li class="item">
+                <div class="block">4</div>
+            </li>
+            <li class="item">
+                <div class="block">5</div>
+            </li>
+            <li class="item">
+                <div class="block">6</div>
+            </li>
+        </ul>
     </div>
     <h3>Meine Videospiele kann man unter folgendem Link finden und spielen: <a href="https://pauligamedev.itch.io/">https://pauligamedev.itch.io/</a></h3>
     <script src="script.js"></script>
