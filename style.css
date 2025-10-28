@@ -1,31 +1,67 @@
+:root {
+    --bg: hsl(0, 0%, 90%);
+    --bg-gradient: linear-gradient(to bottom, var(--bg-light), var(--bg));
+    --bg-light: hsl(0, 0%, 95%);
+    --bg-dark: hsl(0, 0%, 80%);
+
+    --text: hsl(0, 0%, 15%);
+    --text-muted: hsl(0, 0%, 30%);
+
+    --primary: hsl(195 66% 50%);
+    --secondary: hsl(17 69% 50%);
+
+    --border: hsl(0, 0%, 70%);
+}
+
+
 h1 {
+    background: var(--bg-gradient);
     font-family: Arial, sans-serif;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #21232b;
+    font-weight: normal;
+    color: var(--text);
+    background-color: var(--bg);
     text-align: center;
     padding: 10px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px #0e1012;
-    text-shadow: 5px 5px 10px #0e1012;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--border);
+    border-width: 1px;
+    width: 400px;
+    box-shadow: 4px 4px 20px var(--border);
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: var(--text);
+    text-align: center;
+    padding: 10px;
+    text-align-last: left;
+    width: 400px;
 }
 
 h3 {
     font-family: Arial, sans-serif;
-    font-weight: lighter;
-    font-size: 18px;
-    color: #ffffff;
-    background-color: #21232b;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--text);
+    background-color: var(--bg);
     padding: 15px 10px;
     border-radius: 15px;
     margin-bottom: 50px;
-    box-shadow: 5px 5px 10px #0e1012;
-    text-shadow: 5px 5px 10px #0e1012;
+    border-style: solid;
+    border-color: var(--border);
+    border-width: 1px;
+    width: 420px;
+    box-shadow: 4px 4px 20px var(--border);
 }
 
 body {
-    background-color: #171a1d;
+    background-color: var(--bg-dark);
     padding: 5px 50px 25px 25px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
 .grid-container {
@@ -35,32 +71,37 @@ body {
 }
 
 .block {
-    background-color: #21232b;
+    background: var(--bg-gradient);
     padding: 20px 20px;
     border-radius: 15px;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    color: white;
-    box-shadow: 5px 5px 10px #0e1012;
+    border-style: solid;
+    border-color: var(--border);
+    border-width: 1px;
+    max-width: 400px;
+    box-shadow: 4px 4px 20px var(--border);
 
 }
 
 a {
-    color: coral;
-    text-shadow: 5px 5px 10px #0e1012;
+    color: var(--primary);
+    font-weight: bold;
 }
 
 button {
-    background-color: coral;
-    padding: 5px;
+    background-color: var(--secondary);
+    padding: 7px 15px 7px 15px;
     border-radius: 15px;
     border: none;
     font-family: Arial, sans-serif;
-    color: white;
+    font-weight: bold;
+    color: var(--bg);
     margin-top: 10px;
-    margin-left: 10px;
+    margin-bottom: 5px;
     transition: transform 0.2s ease-in-out;
-    box-shadow: 3px 3px 10px #0e1012;
+    box-shadow: 1px 1px 10px hsl(17 69% 40%);
+    margin-left: 10px;
 }
 
 button:hover {
@@ -71,9 +112,13 @@ button:hover {
 img{
     max-width: 300px;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px #0e1012;
+    box-shadow: 5px 5px 15px var(--primary);
+    margin-left: 10px;
+
+
 }
 p{
     font-weight: normal;
-    text-shadow: 5px 5px 10px #0e1012;
+    color: var(--text-muted);
+    margin-left: 10px;
 }
