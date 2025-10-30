@@ -89,7 +89,7 @@ body {
 a {
     color: var(--primary);
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
 }
 
 button {
@@ -118,6 +118,7 @@ img{
     margin-left: 10px;
     border: 1px solid var(--primary);
     box-shadow: 3px 3px 5px var(--border);
+    margin-bottom: 30px;
 
 
 }
