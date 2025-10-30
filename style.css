@@ -65,9 +65,14 @@ body {
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
-    height: 100vh;
     background-attachment: fixed;
     background-size: 100% 100%;
+    scrollbar-gutter: stable;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 .grid-container {
@@ -147,6 +152,10 @@ p{
     border-radius: 15px;
     padding-bottom: 2px;
     min-width: 440px;
+}
+
+.aboutTitle {
+    margin-top: 104px;
 }
 
 input[type="text"] {
