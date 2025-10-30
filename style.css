@@ -7,15 +7,14 @@
     --text: hsl(0, 0%, 15%);
     --text-muted: hsl(0, 0%, 30%);
 
-    --primary: #4da6ff;
-    --secondary-gradient: linear-gradient(to right, hsl(21, 87%, 56%), hsl(0, 98%, 46%));
-    --secondary: #f14f1e;
+    --primary: hsla(221, 61%, 45%, 60%);
+    --secondary-gradient: linear-gradient(to right, #4CB1FF, #396CE4);
 
     --border: hsl(0, 0%, 70%);
 
     --header: hsla(0, 0%, 90%, 0.7);
 
-    --gradient: linear-gradient(to bottom right, #71b7ff, #1b4dea)
+    --gradient: linear-gradient(to bottom right, #2C58B7, #06083D)
 }
 
 
@@ -97,7 +96,6 @@ button {
     background: var(--secondary-gradient);
     padding: 7px 15px 7px 15px;
     border-radius: 100px;
-    border: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
     color: var(--bg);
@@ -105,6 +103,8 @@ button {
     margin-bottom: 5px;
     transition: transform 0.2s ease-in-out;
     margin-left: 10px;
+    box-shadow: 3px 3px 5px var(--border);
+    border: 1px solid var(--primary);
 }
 
 button:hover {
@@ -116,7 +116,8 @@ img{
     max-width: 300px;
     border-radius: 15px;
     margin-left: 10px;
-    box-shadow: 5px 5px var(--secondary);
+    border: 1px solid var(--primary);
+    box-shadow: 3px 3px 5px var(--border);
 
 
 }
@@ -151,7 +152,6 @@ input[type="text"] {
     vertical-align: baseline;
     padding-top: 5px;
     padding-left: 20px;
-    border: none;
     font-size: inherit;
     line-height: inherit;
     border-radius: 100px;
@@ -161,6 +161,8 @@ input[type="text"] {
     background: var(--secondary-gradient);
     border-color: var(--bg-light);
     color: var(--bg-light);
+    box-shadow: 3px 3px 5px var(--border);
+    border: 1px solid var(--primary);
 }
 
 input::placeholder {
