@@ -8,6 +8,7 @@
     --text-muted: hsl(0, 0%, 30%);
 
     --primary: #91b0ff;
+    /*gradient*/
     --secondary-gradient: linear-gradient(to bottom right, #579bfa, #91b0ff);
 
     --border: hsl(0, 0%, 70%);
