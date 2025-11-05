@@ -7,14 +7,14 @@
     --text: hsl(0, 0%, 15%);
     --text-muted: hsl(0, 0%, 30%);
 
-    --primary: hsla(221, 61%, 45%, 60%);
-    --secondary-gradient: linear-gradient(to right, #4CB1FF, #396CE4);
+    --primary: #91b0ff;
+    --secondary-gradient: linear-gradient(to bottom right, #579bfa, #91b0ff);
 
     --border: hsl(0, 0%, 70%);
 
     --header: hsla(0, 0%, 90%, 0.7);
 
-    --gradient: linear-gradient(to bottom right, #2C58B7, #06083D)
+    --gradient: linear-gradient(to bottom right, #FFD6A5, #91b0ff)
 }
 
 
